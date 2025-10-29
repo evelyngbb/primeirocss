@@ -1,21 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anell Star Livraria Real - Início</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <header> 
-        <h1>Oi</h1>
-      </header>  
-      <main>
-        <h1> Primeira pagina</h1>
-        <p>isso aqui é um parágrafo</p>
-      </main>
-      <footer>
-        <p>Colegio Tarquinio</p>
-      </footer>
+    <div class="background-container">
+        <div class="site-container">
+            <header class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo Anell Star" class="logo-image">
+                    <span>ANELL STAR<br>Livraria Real</span>
+                </div>
+                <nav class="menu-principal">
+                    <a href="index.html" class="active">Inicial</a>
+                    <a href="index.html">Produtos</a> 
+                    <a href="sobre_nos.html">Sobre nós</a>
+                    <a href="login.html">Login</a> <div class="search-box">
+                        <input type="text" placeholder="Searchh">
+                        <button class="search-button">Q</button>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="content-area">
+                <aside class="categories-menu">
+                    <h3 class="categories-title">CATEGORIAS</h3>
+                    <ul>
+                        <li><a href="#">Ficção</a> <span class="arrow">></span></li>
+                        <li><a href="#">Fantasia</a> <span class="arrow">></span></li>
+                        <li><a href="#" class="active-category">Não Ficção</a></li>
+                        <li><a href="#">Romance</a> <span class="arrow">></span></li>
+                        <li><a href="#">Suspense</a></li>
+                        <li><a href="#">Poesia</a></li>
+                        <li><a href="#">Infantil</a></li>
+                        <li><a href="#">Autoajuda</a></li>
+                    </ul>
+                </aside>
+
+                <section class="book-grid">
+                    <div class="book-card">
+                        <img src="harrypotter.jpg" alt="Livro 1" class="book-cover">
+                        <p class="book-title">O Livro do Ano</p>
+                        <p class="book-price">R$ 29,90</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="livro2.jpg" alt="Livro 2" class="book-cover">
+                        <p class="book-title">A História Antiga</p>
+                        <p class="book-price">R$ 35,50</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="livro3.jpg" alt="Livro 3" class="book-cover">
+                        <p class="book-title">Dom Casmurro</p>
+                        <p class="book-price">R$ 19,90</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="livro4.jpg" alt="Livro 4" class="book-cover">
+                        <p class="book-title">O Grande Sertão</p>
+                        <p class="book-price">R$ 49,90</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="livro5.jpg" alt="Livro 5" class="book-cover">
+                        <p class="book-title">Caminhos da Vida</p>
+                        <p class="book-price">R$ 22,00</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="livro6.jpg" alt="Livro 6" class="book-cover">
+                        <p class="book-title">A Garota e o Mar</p>
+                        <p class="book-price">R$ 39,99</p>
+                        <button class="buy-button">Sinopse</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
