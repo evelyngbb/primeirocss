@@ -172,6 +172,7 @@ body {
     gap: 30px;
 }
 
+
 .book-card {
     background-color: #fff;
     border-radius: 10px;
@@ -185,13 +186,17 @@ body {
     transform: translateY(-5px);
 }
 
-.book-cover {
+.box-img {
     width: 100%;
     max-width: 150px; 
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box-img:hover {
+  transform: scale(1.05);
 }
 
 .titulo{
@@ -208,21 +213,29 @@ body {
     margin: 5px 0 15px 0;
 }
 
-.botao{
-    background-color: #9370DB;
-    color: purple;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    cursor: pointer; /* o que faz a mao de click quando passa em cima */
-    font-size: 14px;
-    font-weight: bold; /* deixa a letra mais grossa;negrito */
-    transition: 0.3s;
+.sinopse-button {
+  background-color: #9370DB;
+  margin-top: 20px;
+  color: purple;
+  text-align: center;;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer; /* o que faz a mao de click quando passa em cima */
+  font-size: 14px;
+  font-weight: bold; /* deixa a letra mais grossa;negrito */
+  transition: 0.3s;
 }
 
-.botao:hover {
-    background-color: #087bad;
+.sinopse-button:hover {
+  background-color: #087bad;
 }
+
+a{
+    text-decoration: none;
+}
+
+
+
 
 /* --- Estilos do Formulário de Cadastro/Login (login.html) --- */
 
@@ -302,3 +315,99 @@ body {
     line-height: 1.6;
     color: var(--text-color);
 }
+
+
+
+
+
+
+/* Página inicial */
+.box-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.box-item {
+  background-color: #dfabe9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+}
+
+.box-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.box-img:hover {
+  transform: scale(1.05);
+}
+
+/* Botão */
+
+.preco{
+  color: #470155;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* Página de detalhes */
+.details-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.voltar {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-weight: bold;
+}
+
+.sinopse-detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.box-detalhe-img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(15, 15, 15, 0.856);
+}
+
+.texto-sinopse {
+  flex: 1;
+}
+
+.livros-lista {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.livros-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.livros-grid img {
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
