@@ -1,12 +1,12 @@
 
 :root {
-    --primary-color: #d460eb; /* Fundo do container principal (Quase Branco) */
-    --secondary-color: #fbfbfc; /* Azul Escuro Marinho - para textos e cabeçalhos */
-    --accent-color: #ff00ff; /* Amarelo Ouro - para destaques, botões e preços */
-    --soft-purple: #9370DB; /* Roxo Suave - para detalhes */
-    --text-color: #333; /* Cinza Escuro para texto comum */
+    --primary-color: #d460eb; /* Fundo do container principal */
+    --secondary-color: #fbfbfc; /* para textos e cabeçalhos */
+    --accent-color: #ff00ff; /* para destaques, botões e preços */
+    --soft-purple: #9370DB; /* para detalhes */
+    --text-color: #333; /* para texto comum */
     --light-text: #fff;
-    --category-bg: #e6e6fa; /* Lavanda (fundo de hover do menu) */
+    --category-bg: #e6e6fa; /* (fundo de hover do menu) */
 }
 
 body {
@@ -17,9 +17,9 @@ body {
 
 /* Fundo com as ondas (Azul/Roxo Suave) */
 .background-container {
-    background: linear-gradient(180deg, #6495ED 0%, #9370DB 100%); /* Gradiente Azul Cornflower para Roxo Médio */
+    background: linear-gradient(180deg, #6495ED 0%, #9370DB 100%); /* FUNDO */
     padding: 30px 0;
-    min-height: 100vh;
+    min-height: 100vh; /* define altura e se encaixa em qualquer tela;responsivo */
     display: flex;
     justify-content: center;
 }
@@ -30,7 +30,7 @@ body {
     max-width: 1200px;
     background-color: var(--primary-color);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* faz efeito de sombra */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -75,9 +75,8 @@ body {
     transition: color 0.3s;
 }
 
-.menu-principal a:hover,
-.menu-principal a.active {
-    color: var(--accent-color); /* Amarelo no hover/ativo */
+.menu-principal a:hover{
+    color: var(--accent-color) /* muda a cor das palavras do nav-bar */
 }
 
 .search-box {
@@ -126,7 +125,7 @@ body {
 
 .categories-title {
     font-size: 14px;
-    color: var(--secondary-color);
+    color: var(--soft-purple);
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -135,11 +134,11 @@ body {
 
 .categories-menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0; /* distanciamento da borda  */
+    margin: 0; /* espaço entre as palavras */
 }
 
-.categories-menu li {
+.categories-menu li{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,23 +157,6 @@ body {
 
 .categories-menu a:hover {
     background-color: var(--category-bg);
-}
-
-.categories-menu a.active-category { 
-    background-color: var(--soft-purple); /* Roxo Suave na categoria ativa */
-    color: var(--light-text);
-    font-weight: bold;
-}
-
-.categories-menu a.active-category + .arrow {
-    color: var(--light-text); 
-}
-
-.categories-menu .arrow {
-    color: #999;
-    font-weight: bold;
-    padding-right: 15px;
-    font-size: 16px;
 }
 
 /* --- Grid de Livros --- */
@@ -212,34 +194,34 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.book-title {
+.titulo{
     font-size: 14px;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: #6495ED;
     margin: 5px 0;
 }
 
-.book-price {
+.preço{
     font-size: 16px;
-    color: var(--accent-color); /* Preço em Amarelo Ouro */
+    color: #9370DB;
     font-weight: bold;
     margin: 5px 0 15px 0;
 }
 
-.buy-button {
-    background-color: var(--accent-color); /* Botão em Amarelo Ouro */
-    color: var(--secondary-color); /* Texto do botão em Azul Escuro */
+.botao{
+    background-color: #9370DB;
+    color: purple;
     border: none;
     padding: 8px 20px;
     border-radius: 20px;
-    cursor: pointer;
+    cursor: pointer; /* o que faz a mao de click quando passa em cima */
     font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-weight: bold; /* deixa a letra mais grossa;negrito */
+    transition: 0.3s;
 }
 
-.buy-button:hover {
-    background-color: #FFD700; /* Amarelo mais claro no hover */
+.botao:hover {
+    background-color: #087bad;
 }
 
 /* --- Estilos do Formulário de Cadastro/Login (login.html) --- */
